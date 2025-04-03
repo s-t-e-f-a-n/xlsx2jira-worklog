@@ -1,5 +1,10 @@
 # xlsx2jira-worklog-script
 
+<<<<<<< HEAD
+=======
+https://github.com/raphaelsolarski/xlsx2jira-worklog-script.git
+
+>>>>>>> Initial commit
 #### Install dependencies
 ```bash
 pip3 install -r requirements.txt
@@ -23,4 +28,8 @@ python3 xlsx2jira-worklog.py worklog.xlsx
 #### Tests
 ```bash
 python -m unittest
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> Initial commit

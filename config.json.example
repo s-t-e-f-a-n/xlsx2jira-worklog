@@ -1,6 +1,10 @@
 {
-  "url": "https://externalhttpuser:externalhttppassword@company.com/jira/rest",
-  "username": "ldapUser",
-  "password": "ladpPassword",
+  "url": "https://<jira-hostname>",
+  "session_endpoint": "rest/auth/1/session",
+  "issue_endpoint": "rest/api/2/issue",
+  "username": "<username>",
+  "password": "<password>",
+  "api_token": "<api_token>",
   "logging_hour": 9
+  "timezone": "Europe/Berlin"
 }

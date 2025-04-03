@@ -9,19 +9,36 @@ from JiraClient import JiraClient
 
 if len(sys.argv) != 2:
     print('Usage: python3 xlsx2jira-worklog.py <path-to-xlsx-file-with-allocation>')
+<<<<<<< HEAD
     sys.exit(1)
 
 input_file_name = str(sys.argv[1])
+=======
+    input_file_name = "worklog.xlsx"
+else:
+    input_file_name = str(sys.argv[1])  
+>>>>>>> Initial commit
 
 with open('config.json', mode='rt', encoding='utf-8') as fd:
     config = json.load(fd)
 
 client = JiraClient(
     url=config['url'],
+<<<<<<< HEAD
     username=config.get('username'),
     password=config.get('password'),
     cookie=config.get('cookie'),
     cert=config.get('cert'),
+=======
+    session_endpoint=config['session_endpoint'],
+    issue_endpoint=config['issue_endpoint'],
+    username=config.get('username'),
+    password=config.get('password'),
+    api_token=config.get('api_token'),
+    cookie=config.get('cookie'),
+    cert=config.get('cert'),
+    timezone=config.get('timezone'),
+>>>>>>> Initial commit
     logger=logging
 )
 

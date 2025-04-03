@@ -1,11 +1,12 @@
 # xlsx2jira-worklog-script
 
-#### Install dependencies
+## Install dependencies
+
 ```bash
 pip3 install -r requirements.txt
 ```
 
-#### Prepare config.json file with connection configuration
+## Prepare config.json file with connection configuration
 
 ```json
 {
@@ -15,12 +16,14 @@ pip3 install -r requirements.txt
 }
 ```
 
-#### Run script: 
+## Run script
+
 ```bash
 python3 xlsx2jira-worklog.py worklog.xlsx
 ```
 
-#### Tests
+## Tests
+
 ```bash
 python -m unittest
 ```
